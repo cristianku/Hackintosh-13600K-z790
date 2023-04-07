@@ -6,5 +6,6 @@
 - Corsair WAK Cooling Hydro H100i ( controlled with Liquidctl --> https://github.com/liquidctl/liquidctl )
 - Intel i5-13600K
 - SSD Kingston 2000 GB FURY Renegade PCIe 4.0 NVMe M.2 SSD
+- Sapphire Radeon Nitro+ RX 6800 XT OC SE
 
 
