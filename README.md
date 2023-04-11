@@ -26,23 +26,17 @@ VirtualSMC.kext
 WhateverGreen.kext
 
 
-**Dumping your DSDT in Windows Environment**
+# **Dumping your DSDT in Windows Environment**
 
-https://acpica.org/downloads/binary-tools
+- download https://acpica.org/downloads/binary-tools
 
-Open the CMD in the directory where the ACPI Tools was extracted. (Command Prompt) in Administrator Mode:
+- Open the CMD in the directory where the ACPI Tools was extracted. (Command Prompt) in Administrator Mode:
 
 path/to/acpidump.exe -b -n DSDT -z
 move dsdt.dat DSDT.aml
-Decompile DSDT.aml:
 
-path/to/iasl.exe path/to/DSDT.aml
-File DSDT.dsl will generated. Use this for generate YOUR ACPI Patches.
-
-Compile DSDT.dsl:
-
-path/to/iasl.exe path/to/DSDT.dsl
-File APCPI_FILE_PATCHED.aml will generated.
+## how to open DSDT.aml
+- download this program: [MaciASL](https://github.com/acidanthera/MaciASL)
 
 # SSDTIME
 
