@@ -6,7 +6,7 @@
 ### https://download.gigabyte.com/FileList/Manual/mb_manual_z590-aorus-elite_ax_1002_e.pdf
 
 ## Version Bios FDa
-![BIOS01](https://www.gigabyte.com/Motherboard/Z790-AORUS-ELITE-AX-rev-11/support#support-dl-bios)
+(https://www.gigabyte.com/Motherboard/Z790-AORUS-ELITE-AX-rev-11/support#support-dl-bios)
 
 ## 1) Advanced Mode 
 # 3) Setting -> IOports
