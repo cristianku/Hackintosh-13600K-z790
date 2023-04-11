@@ -44,7 +44,8 @@ Compile DSDT.dsl:
 path/to/iasl.exe path/to/DSDT.dsl
 File APCPI_FILE_PATCHED.aml will generated.
 
-#SSDTIME
+# SSDTIME
+
 ![A simple tool designed to make creating SSDTs simple. Supports macOS, Linux and Windows](https://github.com/corpnewt/SSDTTime)
 
 Supported SSDTs:
