@@ -76,13 +76,21 @@ Additionally on Linux and Windows the tool can be used to dump the system DSDT.
 # **Special notes**
 
 USB port mapping is REQUIRED.
+
+[use this USBToolBox](https://github.com/USBToolBox/tool)
+
 XhciPortLimit - Needed DISABLE if you use Big Sur 11.3+.
+
 Please Mapping USB in macOS Catalina before install Big Sur or Newer for best results.
-You can use USBMap.command Utility - USBMap.
+
 AppleXcpmCfgLock - Please ENABLE if you cannot disableCFG-Lock in BIOS.
+
 Does NOT SUPPORT iGPU in 13th Gen.
+
 You NEED dGPU (dedicated/discrete GPU (eg. RX 560, 570, 580, 590, RX 5700 XT, etc).
+
 SetupVirtualMap - Please ENABLE if you stuck in Early boot.
+
 
 # **GPU-Specific boot-args**
 
