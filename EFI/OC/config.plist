@@ -855,7 +855,7 @@
                     <key>revcpu</key>
                     <integer>1</integer>
                     <key>revcpuname</key>
-                    <string>24-Core Intel i7 13700K</string>
+                    <string>14-Core Intel i5 13600K</string>
                     <key>rtc-blacklist</key>
                     <data></data>
                 </dict>

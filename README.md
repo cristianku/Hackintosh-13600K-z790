@@ -31,7 +31,6 @@ WhateverGreen.kext
 ## download https://acpica.org/downloads/binary-tools
 
 - Open the CMD in the directory where the ACPI Tools was extracted. (Command Prompt) in Administrator Mode:
-
 path/to/acpidump.exe -b -n DSDT -z
 move dsdt.dat DSDT.aml
 
