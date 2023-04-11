@@ -45,7 +45,7 @@ path/to/iasl.exe path/to/DSDT.dsl
 File APCPI_FILE_PATCHED.aml will generated.
 
 
-## **Special notes**
+# **Special notes**
 
 USB port mapping is REQUIRED.
 XhciPortLimit - Needed DISABLE if you use Big Sur 11.3+.
@@ -56,15 +56,15 @@ Does NOT SUPPORT iGPU in 13th Gen.
 You NEED dGPU (dedicated/discrete GPU (eg. RX 560, 570, 580, 590, RX 5700 XT, etc).
 SetupVirtualMap - Please ENABLE if you stuck in Early boot.
 
-## **GPU-Specific boot-args**
+# **GPU-Specific boot-args**
 
 Parameter	Description
 agdpmod=pikera	Used for disabling board ID checks on Navi GPUs(RX 5000 series & RX 6000 series), without this you'll get a black screen.
 Don't use if you don't have Navi (ie. Polaris and Vega cards shouldn't use this).
 
-## **BIOS Settings**
+# **BIOS Settings**
 
-# Disable
+## Disable
 
 Fast Boot
 Secure Boot
@@ -79,7 +79,7 @@ CFG Lock (MSR 0xE2 write protection)
 This must be off, if you can't find the option then ENABLE AppleXcpmCfgLock.
 Your hack will not boot with CFG-Lock enabled.
 
-# Enable
+## Enable
 
 VT-x
 Above 4G decoding.
