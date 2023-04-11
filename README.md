@@ -9,3 +9,18 @@
 - Sapphire Radeon Nitro+ RX 6800 XT OC SE
 
 
+**Kexts used:**
+
+AppleALC.kext
+BlueToolFixup.kext
+Lilu.kext
+LucyRTL8125Ethernet.kext
+NVMeFix.kext
+RadeonSensor.kext
+SMCProcessor.kext
+SMCRadeonGPU.kext
+SMCSuperIO.kext
+USBToolBox.kext
+UTBMap.kext
+VirtualSMC.kext
+WhateverGreen.kext
