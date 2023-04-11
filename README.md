@@ -24,3 +24,70 @@ USBToolBox.kext
 UTBMap.kext
 VirtualSMC.kext
 WhateverGreen.kext
+
+
+**Dumping your DSDT in Windows Environment**
+
+https://acpica.org/downloads/binary-tools
+
+Open the CMD in the directory where the ACPI Tools was extracted. (Command Prompt) in Administrator Mode:
+
+path/to/acpidump.exe -b -n DSDT -z
+move dsdt.dat DSDT.aml
+Decompile DSDT.aml:
+
+path/to/iasl.exe path/to/DSDT.aml
+File DSDT.dsl will generated. Use this for generate YOUR ACPI Patches.
+
+Compile DSDT.dsl:
+
+path/to/iasl.exe path/to/DSDT.dsl
+File APCPI_FILE_PATCHED.aml will generated.
+
+
+## **Special notes**
+
+USB port mapping is REQUIRED.
+XhciPortLimit - Needed DISABLE if you use Big Sur 11.3+.
+Please Mapping USB in macOS Catalina before install Big Sur or Newer for best results.
+You can use USBMap.command Utility - USBMap.
+AppleXcpmCfgLock - Please ENABLE if you cannot disableCFG-Lock in BIOS.
+Does NOT SUPPORT iGPU in 13th Gen.
+You NEED dGPU (dedicated/discrete GPU (eg. RX 560, 570, 580, 590, RX 5700 XT, etc).
+SetupVirtualMap - Please ENABLE if you stuck in Early boot.
+
+## **GPU-Specific boot-args**
+
+Parameter	Description
+agdpmod=pikera	Used for disabling board ID checks on Navi GPUs(RX 5000 series & RX 6000 series), without this you'll get a black screen.
+Don't use if you don't have Navi (ie. Polaris and Vega cards shouldn't use this).
+
+## **BIOS Settings**
+
+# Disable
+
+Fast Boot
+Secure Boot
+Serial/COM Port
+Parallel Port
+VT-d (can be enabled if you set DisableIoMapper to YES)
+Compatibility Support Module (CSM).
+Thunderbolt(For initial install, as Thunderbolt can cause issues if not setup correctly)
+Intel SGX
+Intel Platform Trust
+CFG Lock (MSR 0xE2 write protection)
+This must be off, if you can't find the option then ENABLE AppleXcpmCfgLock.
+Your hack will not boot with CFG-Lock enabled.
+
+# Enable
+
+VT-x
+Above 4G decoding.
+This must be on, if you can't find the option then add npci=0x2000 to boot-args.
+Do not have both this option and npci on boot-args enabled at the same time.
+When enabling Above4G, Resizable BAR Support may become an available on some motherboards. Please ensure this is DISABLED instead of set to Auto.
+Hyper-Threading
+Execute Disable Bit
+EHCI/XHCI Hand-off
+OS type: Windows 8.1/10 UEFI Mode
+SATA Mode: AHCI
