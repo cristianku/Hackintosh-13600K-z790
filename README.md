@@ -28,7 +28,7 @@ WhateverGreen.kext
 
 # **Dumping your DSDT in Windows Environment**
 
-- download https://acpica.org/downloads/binary-tools
+## download https://acpica.org/downloads/binary-tools
 
 - Open the CMD in the directory where the ACPI Tools was extracted. (Command Prompt) in Administrator Mode:
 
