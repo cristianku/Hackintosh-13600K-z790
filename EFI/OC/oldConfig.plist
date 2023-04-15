@@ -439,11 +439,29 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0</string>
+                    <string>V2.1.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>itlwm.kext</string>
+                    <key>Comment</key>
+                    <string>V2.1.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/itlwm</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -855,7 +873,7 @@
                     <key>revcpu</key>
                     <integer>1</integer>
                     <key>revcpuname</key>
-                    <string>24-Core Intel i7 13700K</string>
+                    <string>14-Core Intel i5 13600K</string>
                     <key>rtc-blacklist</key>
                     <data></data>
                 </dict>
@@ -933,13 +951,13 @@
             <key>Generic</key>
             <dict>
                 <key>AdviseFeatures</key>
-                <true/>
+                <false/>
                 <key>MLB</key>
-                <string>CK10102J50004</string>
+                <string>F5K902207QXFHDDJC</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>3841</integer>
+                <integer>3842</integer>
                 <key>ROM</key>
                 <data>JeNKtR5g</data>
                 <key>SpoofVendor</key>
@@ -947,11 +965,11 @@
                 <key>SystemMemoryStatus</key>
                 <string>Upgradable</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro7,1</string>
+                <string>MacPro7,1</string>
                 <key>SystemSerialNumber</key>
-                <string>CK1020HJATM</string>
+                <string>F5KY3RZ7P7QM</string>
                 <key>SystemUUID</key>
-                <string>36388306-9925-403B-BD6C-CC95AFC9867E</string>
+                <string>D6FF4EB3-B7B1-4C26-94D3-D40C07A28529</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
