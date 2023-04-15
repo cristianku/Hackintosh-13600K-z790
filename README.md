@@ -1,4 +1,5 @@
-# Opencore 0.9.1 Hackintosh intel i5-13600k, ASUS Z790P WIFI RADEON 6800XT 
+# Opencore 0.9.1 Hackintosh intel i5-13600k, Gigabyte Z790 AORUS ELITE AX
++ RADEON 6800XT 
 
 - Asus prime Z790-P WIFI
 - Corsair RM1000E
