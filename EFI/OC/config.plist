@@ -214,6 +214,11 @@
         <dict>
             <key>Add</key>
             <dict>
+                <key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+                <dict>
+                    <key>acpi-wake-type</key>
+                    <data>AQ==</data>
+                </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
@@ -603,7 +608,7 @@
                     <key>Comment</key>
                     <string>V1.1.0</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/CpuTopologyRebuild</string>
                     <key>MaxKernel</key>
@@ -701,7 +706,7 @@
                 <key>ConsoleAttributes</key>
                 <integer>0</integer>
                 <key>HibernateMode</key>
-                <string>Auto</string>
+                <string>None</string>
                 <key>HibernateSkipsPicker</key>
                 <false/>
                 <key>HideAuxiliary</key>
@@ -873,7 +878,7 @@
                     <key>revcpu</key>
                     <integer>1</integer>
                     <key>revcpuname</key>
-                    <string>24-Core Intel i7 13700K</string>
+                    <string>20-Core Intel i5 13600K</string>
                     <key>rtc-blacklist</key>
                     <data></data>
                 </dict>
@@ -884,7 +889,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>agdpmod=pikera</string>
+                    <string>swd_panic=1 keepsyms=1 agdpmod=pikera</string>
                     <key>csr-active-config</key>
                     <data>/w8AAA==</data>
                     <key>run-efi-updater</key>
