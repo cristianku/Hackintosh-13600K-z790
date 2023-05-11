@@ -246,7 +246,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.4</string>
+                    <string>V1.6.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -336,7 +336,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.1 | AppleALC.kext</string>
+                    <string>V1.8.2 | AppleALC.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -408,7 +408,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.0 | RestrictEvents.kext</string>
+                    <string>V1.1.1 | RestrictEvents.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -462,9 +462,9 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.5 | BlueToolFixup.kext</string>
+                    <string>V2.6.6 | BlueToolFixup.kext</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BlueToolFixup</string>
                     <key>MaxKernel</key>
@@ -500,7 +500,7 @@
                     <key>Comment</key>
                     <string>V2.2.0 | IntelBTPatcher.kext</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/IntelBTPatcher</string>
                     <key>MaxKernel</key>
@@ -590,7 +590,7 @@
                     <key>Comment</key>
                     <string>V1.1.0</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/CpuTopologyRebuild</string>
                     <key>MaxKernel</key>
@@ -636,6 +636,8 @@
                 <false/>
                 <key>DisableIoMapper</key>
                 <true/>
+                <key>DisableIoMapperMapping</key>
+                <false/>
                 <key>DisableLinkeditJettison</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
@@ -688,7 +690,7 @@
                 <key>ConsoleAttributes</key>
                 <integer>0</integer>
                 <key>HibernateMode</key>
-                <string>None</string>
+                <string>Auto</string>
                 <key>HibernateSkipsPicker</key>
                 <false/>
                 <key>HideAuxiliary</key>
@@ -721,7 +723,7 @@
                 <key>ApplePanic</key>
                 <false/>
                 <key>DisableWatchDog</key>
-                <true/>
+                <false/>
                 <key>DisplayDelay</key>
                 <integer>0</integer>
                 <key>DisplayLevel</key>
@@ -860,7 +862,7 @@
                     <key>revcpu</key>
                     <integer>1</integer>
                     <key>revcpuname</key>
-                    <string>20-Core Intel i5 13600K</string>
+                    <string>24-Core Intel i5 13600K</string>
                     <key>rtc-blacklist</key>
                     <data></data>
                 </dict>
@@ -940,13 +942,13 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string></string>
+                <string>F5K0113064NK3F7JA</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>3841</integer>
                 <key>ROM</key>
-                <data></data>
+                <data>wCX+fkFJ</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
@@ -954,9 +956,9 @@
                 <key>SystemProductName</key>
                 <string>MacPro7,1</string>
                 <key>SystemSerialNumber</key>
-                <string>M</string>
+                <string>F5KCFSZNP7QM</string>
                 <key>SystemUUID</key>
-                <string></string>
+                <string>8BBF35DF-F53B-43B8-86BD-F19D812929AA</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1140,6 +1142,8 @@
                 <string>Disabled</string>
                 <key>IgnoreTextInGraphics</key>
                 <false/>
+                <key>InitialMode</key>
+                <string>Auto</string>
                 <key>ProvideConsoleGop</key>
                 <true/>
                 <key>ReconnectGraphicsOnConnect</key>
